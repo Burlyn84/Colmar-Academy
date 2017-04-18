@@ -1,0 +1,89 @@
+/*Universal Syles*/
+html{
+  font-size:16px;
+}
+
+.image-container{
+  max-width: 100%;
+  background-repeat: no-repeat;
+  overflow:hidden;
+  background-position: right;
+}
+
+.container{
+  display: flex;
+}
+
+/*Header Section*/
+
+header{
+  height:64px;
+  width:100%;
+  display:inline-flex;
+  background-color: white;
+  position:fixed;
+  z-index: 100;
+  margin:0;
+}
+
+/*Main Banner Section*/
+.main-banner{
+width:100%;
+display:flex;
+flex-direction:row;
+margin-top:64px;
+background-color: #c0c0c0;
+height:50rem;
+}
+
+.main-banner .image-container{
+  width:60%;
+  height:auto;
+  background-image:url('../Assets/images/banner.jpg');
+  background-size: cover;
+  margin:2rem 0 2rem 1.5rem;
+}
+
+.main-banner-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 2.5rem;
+  margin-right: 11rem;
+  width:50%;
+}
+
+.main-banner-content h1{
+  font-family: helvetica, sans-serif;
+  font-size: 4rem;
+  font-weight:bold;
+  margin-bottom: 4rem;
+
+}
+
+.main-banner-content h3{
+  font-family: helvetica, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+
+}
+
+#main-banner-btn{
+  text-align: center;
+  background-color: #000;
+  border-radius: .5rem;
+  width:100%;
+}
+
+#main-banner-btn h3{
+  text-align: center;
+  font-size: 2rem;
+  margin:.7rem 2rem;
+  font-family:helvetica, sans-serif;
+  color:white;
+}
+
+/*Events Section*/
+.events{
+  margin-top:2rem;
+}
