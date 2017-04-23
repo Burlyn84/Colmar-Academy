@@ -1,89 +1,170 @@
 /*Universal Syles*/
 html{
   font-size:16px;
+  font-family: helvetica, sans-serif;
+}
+.container{
+  display:flex;
+  width:100%;
 }
 
 .image-container{
-  max-width: 100%;
-  background-repeat: no-repeat;
-  overflow:hidden;
-  background-position: right;
+  max-width:100%;
+  /*height:auto;*/
+  overflow: hidden;
 }
 
-.container{
-  display: flex;
-}
-
-/*Header Section*/
-
+/*header Section*/
 header{
-  height:64px;
-  width:100%;
-  display:inline-flex;
-  background-color: white;
   position:fixed;
   z-index: 100;
-  margin:0;
+  background-color: #fff;
+  height: 4rem;
+  width: 100%;
+  display: inline-block;
+  display:flex;
+  justify-content: space-between;
 }
 
-/*Main Banner Section*/
+.logo{
+  display: flex;
+  flex-direction: row;
+  margin-left: 1.5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.logo img{
+  height:3rem;
+  width:auto;
+}
+
+#full-menu{
+  float: right;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 24px;
+
+}
+
+#full-menu ul li{
+  padding-left: 1rem;
+  font-size: 1vw;
+  font-weight: 500;
+  font-family: Helvetica, sans-serif;
+  display: inline-block;
+  opacity: .5;
+}
+
+#name{
+  margin-top:auto;
+  margin-bottom: auto;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+#name span{
+  font-weight: 400;
+  opacity: .5;
+}
+
+@media only screen and (max-width: 600px){
+  #full-menu{
+    display: none;
+  }
+  #name{
+    display:none;
+  }
+}
+
+@media only screen and (min-width: 600px){
+  #mobile-menu{
+    display: none;
+  }
+}
+/*Banner Section*/
 .main-banner{
-width:100%;
-display:flex;
-flex-direction:row;
-margin-top:64px;
-background-color: #c0c0c0;
-height:50rem;
+  margin-top:4rem;
+  background-color: darkgrey;
+  width:100%;
+  display: flex;
+  flex-direction: row;
 }
 
-.main-banner .image-container{
-  width:60%;
-  height:auto;
-  background-image:url('../Assets/images/banner.jpg');
-  background-size: cover;
-  margin:2rem 0 2rem 1.5rem;
+.image-container img{
+  max-width: 100%;
+  padding:2rem 1.5rem;
 }
 
 .main-banner-content{
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  margin-left: 2.5rem;
-  margin-right: 11rem;
-  width:50%;
+  flex-direction: column;
+  border:1px solid red;
 }
-
 .main-banner-content h1{
-  font-family: helvetica, sans-serif;
-  font-size: 4rem;
-  font-weight:bold;
-  margin-bottom: 4rem;
-
+  font-size: 3vw;
+  font-weight: bold;
+  opacity: .6;
+  padding:2rem;
+  text-align: center;
 }
 
 .main-banner-content h3{
-  font-family: helvetica, sans-serif;
-  font-size: 2rem;
-  margin-bottom: 4rem;
-
+  font-size: 2vw;
+  font-weight: bold;
+  opacity: .6;
+  padding:2rem;
+  text-align: center;
 }
 
 #main-banner-btn{
-  text-align: center;
-  background-color: #000;
-  border-radius: .5rem;
-  width:100%;
-}
-
-#main-banner-btn h3{
-  text-align: center;
-  font-size: 2rem;
-  margin:.7rem 2rem;
-  font-family:helvetica, sans-serif;
+  background-color:#696969;
   color:white;
+  font-size:2vw;
+  text-align: center;
+  width:20rem;
+  padding:1rem 4rem;
+  border-radius: 1rem;
+  margin-right:auto;
+  margin-left:auto;
+}
+/*Info Section*/
+
+.events{
+  width:100%;
+  display: flex;
+  flex-direction: row;
 }
 
-/*Events Section*/
-.events{
+.events-content{
+  max-width:46%;
+}
+
+.events-content h1{
+  font-size: 3rem;
+  font-weight: bold;
+  padding-left:1.5rem;
+}
+
+.events-content p {
+  font-size: 1.25rem;
+  padding:1.5rem;
+}
+
+.events-col{
+  border-left: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  border:red solid 4px;
+}
+
+.events-col span{
   margin-top:2rem;
+  margin-left:1.5rem;
+}
+.event-info{
+  display: flex;
+  flex-direction: row;
 }
