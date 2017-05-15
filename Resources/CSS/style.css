@@ -124,7 +124,6 @@ header {
 .main-banner-content h1 {
   font-size: 3rem;
   font-weight: bold;
-  opacity: .6;
   padding:2rem;
   text-align: left;
   color:#fff;
@@ -132,7 +131,6 @@ header {
 
 .main-banner-content h3 {
   font-size: 2rem;
-  opacity: .6;
   padding:2rem;
   text-align: left;
   font-family: Helvetica, sans-serif;
