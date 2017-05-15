@@ -119,6 +119,7 @@ header {
   justify-content: center;
   flex-direction: column;
   text-align: left;
+  color:#ffffff;
 }
 
 .main-banner-content h1 {
